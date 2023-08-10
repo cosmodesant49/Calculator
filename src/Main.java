@@ -3,15 +3,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         double operation;
+
         System.out.println("введите первое число");
-        Scanner scanner1 = new Scanner(System.in);
-        double number1 = scanner1.nextDouble();
+        Scanner scanner = new Scanner(System.in);
+        double number1 = scanner.nextDouble();
+
         System.out.println("введите первое число");
-        Scanner scanner2 = new Scanner(System.in);
-        double number2 = scanner2.nextDouble();
+        double number2 = scanner.nextDouble();
+
         System.out.println("выберите действие (+, -, *, /)");
-        Scanner scanner3 = new Scanner(System.in);
-        char opera   = scanner3.next().charAt(0);
+        char opera   = scanner.next().charAt(0);
+
+
         switch (opera){
             case    '+' :
                 System.out.println(operation=number1+number2);
@@ -25,6 +28,9 @@ public class Main {
             case    '/' :
                 System.out.println(operation=number1/number2);
             break;
+            default:
+                System.out.println("Прогер ленивая сволчь и такое не проходил");
+
 
 
         }
